@@ -9,7 +9,7 @@ socket.on('connect', function() {
 });
 
 // Listen for the 'oh-hey' event that is coming from the server.
-socket.on('oh-hey', function(data) {
+socket.on('rand-num', function(data) {
   console.log('Wow! ' + data.num);
 });
 
@@ -20,7 +20,7 @@ function sendHelloMessage() {
   // Send the server a message called 'hello' which contains a JS object with a random number.
   // Remember - you're never sending information directly to other clients (browsers).
   // You usually use the server as the central hub to distribute information.
-  socket.emit('hello', { num: randomNum });
+  socket.emit('rand-num', { num: randomNum });
 }
 
 //Button event
