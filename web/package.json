@@ -1,0 +1,16 @@
+{
+  "name": "node-of-ws-boilerplate",
+  "version": "1.0.0",
+  "description": "Connecting stuff",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Owen",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "serve-index": "^1.7.2",
+    "socket.io": "^1.3.7"
+  }
+}
